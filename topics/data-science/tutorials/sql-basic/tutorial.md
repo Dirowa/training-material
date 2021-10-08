@@ -645,7 +645,8 @@ We can also filter by partial matches.  For example, if we want to
 know something just about the site names beginning with "DR" we can
 use the `LIKE` keyword.  The percent symbol acts as a
 wildcard, matching any characters in that
-place.  It can be used at the beginning, middle, or end of the string:
+place.  It can be used at the beginning, middle, or end of the string
+Click ([here](https://www.w3schools.com/sql/sql_wildcards.asp) for more wildcard examples:
 
 ```sql
 SELECT * FROM Visited WHERE site LIKE 'DR%';
@@ -815,7 +816,8 @@ issues.
 > After further reading,
 > we realize that Valentina Roerich
 > was reporting salinity as percentages.
-> Write a query that returns all of her salinity measurements
+> 
+> **Challenge**: Write a query that returns all of her salinity measurements
 > from the `Survey` table
 > with the values divided by 100.
 >
@@ -900,7 +902,8 @@ issues.
 > or 0 if Y does not exist in X.
 > The substring function `substr(X, I, [L])`
 > returns the substring of X starting at index I, with an optional length L.
-> Use these two functions to produce a list of unique major site identifiers.
+> 
+> **Challenge**: Use these two functions to produce a list of unique major site identifiers.
 > (For this data,
 > the list should contain only "DR" and "MSK").
 >
@@ -1032,7 +1035,7 @@ detail in [the next section](#).
 
 > ### {% icon question %} Sorting by Known Date
 >
-> Write a query that sorts the records in `Visited` by date,
+> **Challenge**: Write a query that sorts the records in `Visited` by date,
 > omitting entries for which the date is not known
 > (i.e., is null).
 >
